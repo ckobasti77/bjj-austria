@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("./assets/fonts/AvenirLTStd-Black.otf");
+}
+
+.App {
+  font-family: "Avenir", sans-serif;
+  letter-spacing: 1px;
+}
+
+.App video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
