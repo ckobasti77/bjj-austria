@@ -1,13 +1,13 @@
 import React from "react";
 // import Logo from "../img/logo.jpg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = ({ home }) => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "BJJ", link: "/BJJ" },
-    { name: "MMA", link: "/Mma" },
+    { name: "MMA", link: "/MMA" },
     { name: "GRAPPLING", link: "/Grappling" },
     { name: "BTT", link: "/BTT" },
     { name: "PREIS", link: "/Preis" },
@@ -51,12 +51,12 @@ const Nav = ({ home }) => {
               key={Links.name}
               className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold "
             >
-              <a
-                href={Link.link}
+              <NavLink
+                to={Link.link}
                 className="text-[#ccc] hover:text-white duration-500"
               >
                 {Link.name}
-              </a>
+              </NavLink>
             </li>
           ))}
           <li className="xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold ">
