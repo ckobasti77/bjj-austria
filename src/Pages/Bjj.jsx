@@ -1,6 +1,31 @@
 import React from "react";
 import Gallery from "../components/Gallery";
-// import img1 from '../img/bjj/1.jpg'
+
+const images = [
+  {url: "/./img/bjj/1.jpg", caption: ''},
+  {url: "/./img/bjj/3.jpg", caption: ''},
+  {url: "/./img/bjj/4.jpg", caption: ''},
+  {url: "/./img/bjj/5.jpg", caption: ''},
+  {url: "/./img/bjj/6.jpg", caption: ''},
+  {url: "/./img/bjj/7.jpg", caption: ''},
+  {url: "/./img/bjj/8.jpg", caption: ''},
+  {url: "/./img/bjj/9.jpg", caption: ''},
+  {url: "/./img/bjj/10.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed1.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed2.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed3.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed4.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed5.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed8.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed9.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed10.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed11.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed12.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed13.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed15.jpg", caption: ''},
+  {url: "/./img/bjj/unnamed16.jpg", caption: ''},
+];
 
 const Bjj = () => {
   return (
@@ -60,7 +85,7 @@ const Bjj = () => {
           </div>
         </div>
       </div>
-      <Gallery />
+      <Gallery images={images}/>
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({ bg }) => {
     return (
-        <section class="bg-[#191919]" >
+        <section class={bg === 'bg' ? "bg-[url(/./img/BTT-bg.png)]" : "bg-[#191919]"} >
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md" >
                 <h2 class="mb-8 lg:mb-16 text-4xl tracking-tight font-extrabold text-center text-white" data-aos='fade-down' data-aos-delay='600'>KONTAKTIEREN SIE UNS</h2>
                 <form action="https://formsubmit.co/bttwien@gmail.com" method="POST" class="space-y-8 flex flex-col">

@@ -1,18 +1,37 @@
 import React from "react";
-// import Nav from "../components/Nav";
+import Gallery from "../components/Gallery";
+
+const images = [
+  { url: "/./img/grappling/1.jpg", caption: "" },
+  { url: "/./img/grappling/2.jpg", caption: "" },
+  { url: "/./img/grappling/3.jpg", caption: "" },
+  { url: "/./img/grappling/4.jpg", caption: "" },
+  { url: "/./img/grappling/5.jpg", caption: "" },
+  { url: "/./img/grappling/6.jpg", caption: "" },
+];
 
 const Grappling = () => {
   return (
-    <div className="bg-[#191919]">
-      {/* <Nav /> */}
-      <section className="relative bg-[url('./img/bjj_wallpaper.jpg')] bg-cover bg-center bg-no-repeat h-[600px]">
-        <div className="absolute inset-0 sm:bg-transparent"></div>
-
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex  lg:items-center lg:px-8">
-          <div className="max-w-xl text-center sm:text-left">
-            <h1 className="text-3xl font-extrabold sm:text-5xl text-white text-center">GRAPPLING</h1>
-
-            <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed text-white">
+    <div>
+      <div className="flex items-center justify-center bg-[url(/./img/bjj-belt-small.png)] md:bg-[url(/./img/bjj-belt-phone.png)] lg:bg-[url(/./img/bjj-belt.png)] bg-no-repeat bg-cover md:bg-cover min-h-[200px] my-auto">
+        <h1 className="text-[3.5rem] md:text-[5rem] text-center font-normal text-white">
+          GRAPPLING
+        </h1>
+      </div>
+      <div className="bg-[url(/./img/BTT-bg.png)] bg-cover">
+        <div className="flex flex-col-reverse lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
+          <div className="overflow-hidden h-full w-full lg:w-3/6">
+            <img
+              src="/./img/grappling/1.jpg"
+              alt="1"
+              className="h-[700px] hover:scale-120 object-cover w-full"
+            />
+          </div>
+          <div className="text-white md:text-justify p-4 w-full lg:w-3/6">
+            <h2 className="text-5xl md:text-6xl mt-16 mb-[3rem] text-center">
+              WAS IST GRAPPLING?
+            </h2>
+            <p className="text-lg md:text-2xl px-8 md:px-24">
               Grappling, im Nahkampf, beschreibt Sportarten, die darin bestehen,
               den Gegner zu greifen oder zu ergreifen. Grappling wird aus
               nächster Nähe verwendet, um einen körperlichen Vorteil gegenüber
@@ -20,22 +39,33 @@ const Grappling = () => {
               oder durch Verursachen von Verletzungen. Grappling ist ein weit
               gefasster Begriff, der viele Disziplinen umfasst. Diese
               verschiedenen Kampfkünste können sowohl als Kampfsport als auch
-              zur Selbstverteidigung ausgeübt werden. Grappling-Wettbewerbe
-              beinhalten oft Takedowns und Bodenkontrolle und können enden, wenn
-              ein Teilnehmer eine Niederlage eingesteht, auch bekannt als
-              Submission oder Tap Out.
-              
-              Grappling beinhaltet meistens kein
-              Schlagen oder den Einsatz von Waffen. Einige Kampfstile oder
-              Kampfkünste, die besonders für ihre Grappling-Techniken bekannt
-              sind, lehren jedoch Taktiken, die Schläge und Waffen beinhalten,
-              entweder neben dem Grappling oder in Kombination damit.
-
-              Grappling erschien in den 1950er Jahren.
+              zur Selbstverteidigung ausgeübt werden.
             </p>
           </div>
         </div>
-      </section>
+        <div className="flex flex-col lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
+          <div className="text-white md:text-justify p-4 w-full flex items-center lg:w-3/6">
+            <p className="text-lg md:text-2xl px-8 md:px-24">
+              Grappling beinhaltet meistens kein Schlagen oder den Einsatz von
+              Waffen. Einige Kampfstile oder Kampfkünste, die besonders für ihre
+              Grappling-Techniken bekannt sind, lehren jedoch Taktiken, die
+              Schläge und Waffen beinhalten, entweder neben dem Grappling oder
+              in Kombination damit. Grappling erschien in den 1950er Jahren.
+              Grappling-Techniken können grob in Clinch-Kämpfe unterteilt
+              werden; Takedowns und Würfe; Submission Holds und Pinning oder
+              Kontrolltechniken; und Sweeps, Umkehrungen, Umsätze und Fluchten.
+            </p>
+          </div>
+          <div className="overflow-hidden w-full lg:w-3/6">
+            <img
+              src="/./img/bjj/unnamed8.jpg"
+              alt="1"
+              className="h-[700px] hover:scale-120 object-cover w-full"
+            />
+          </div>
+        </div>
+      </div>
+      <Gallery images={images} />
     </div>
   );
 };

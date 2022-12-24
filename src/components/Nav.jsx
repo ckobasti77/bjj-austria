@@ -64,7 +64,7 @@ const Nav = ({ home }) => {
               href="https://www.facebook.com/bttaustria"
               rel="noreferrer"
               target="_blank"
-              className="text-[#ccc] transition hover:text-white"
+              className="text-[#ccc] transition hover:text-[#4267b2]"
             >
               <span class="sr-only">Facebook</span>
               <svg
@@ -81,7 +81,7 @@ const Nav = ({ home }) => {
               </svg>
             </a>
           </li>
-          <li className="xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold ">
+          <li className="xl:ml-8 xl:text-2xl rounded-xl transition insta text-sm xl:my-0 my-7 flex items-center justify-center place-between my-1 font-bold ">
             <a
               href="https://www.instagram.com/bttaustria/"
               rel="noreferrer"
