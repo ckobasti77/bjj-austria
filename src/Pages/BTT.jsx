@@ -15,15 +15,15 @@ const BTT = () => {
   return (
     <div>
       <div className="flex items-center justify-center bg-[url(/./img/BTT/btt-belt-small.png)] md:bg-[url(/./img/BTT/btt-belt-phone.png)] lg:bg-[url(/./img/BTT/btt-belt.png)] bg-no-repeat bg-cover min-h-[200px] my-auto">
-        <h1 className="text-[3.5rem] md:text-[5rem] text-center font-normal text-white">
+        <h1 data-aos='fade-down' data-aos-delay='700' className="text-[3rem] md:text-[4rem] lg:text-[5rem] text-center font-normal text-white">
           BRAZILIAN TOP TEAM
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-center px-8 lg:px-32 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-fill text-white text-2xl">
-        <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
+      <div className="flex flex-col items-center justify-center px-8 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-fill text-white text-2xl">
+        <h2 data-aos='fade-left' data-aos-delay='1000' className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
           ÜBER
         </h2>
-        <p>
+        <p data-aos='fade-right' data-aos-delay='1000'>
           Das Brazilian Top Team (BTT) ist eine Akademie, die sich auf Brazilian
           Jiu Jitsu und Mixed Martial Arts spezialisiert hat. Es wurde im April
           2000 von Murilo Bustamante, Ricardo Libório, Mário Sperry und Luis
@@ -33,16 +33,16 @@ const BTT = () => {
           schaffen.
         </p>
       </div>
-      <div className="flex justify-between px-8 lg:px-32 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
+      <div className="flex justify-between px-8 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
         <div className="flex flex-col-reverse lg:flex-row gap-y-8 gap-x-16 min-h-[700px] w-full mx-auto">
-          <div className="overflow-hidden h-full w-full lg:w-5/12">
+          <div data-aos='fade-right' data-aos-delay='700' className="overflow-hidden h-full w-full lg:w-5/12">
             <img
               src="/./img/BTT/murilo.jpg"
               alt="1"
               className="h-[700px] murilo object-cover w-full"
             />
           </div>
-          <div className="text-white md:text-justify my-auto w-full lg:w-7/12">
+          <div data-aos='fade-left' data-aos-delay='700' className="text-white md:text-justify my-auto w-full lg:w-7/12">
             <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
               Murilo Bustamante
             </h2>
@@ -58,16 +58,16 @@ const BTT = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between px-8 lg:px-32 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
+      <div className="flex justify-between px-8 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
         <div className="flex flex-col-reverse lg:flex-row-reverse gap-y-8 gap-x-16 min-h-[700px] w-full mx-auto">
-          <div className="overflow-hidden h-full w-full lg:w-5/12">
+          <div data-aos='fade-left' data-aos-delay='700' className="overflow-hidden h-full w-full lg:w-5/12">
             <img
               src="/./img/bjj/1.jpg"
               alt="1"
-              className="h-[825px] murilo object-cover w-full"
+              className="h-[825px] lg:h-[1000px] murilo object-cover w-full"
             />
           </div>
-          <div className="text-white md:text-justify my-auto w-full lg:w-7/12">
+          <div data-aos='fade-right' data-aos-delay='700' className="text-white md:text-justify my-auto w-full lg:w-7/12">
             <h2 className="text-5xl md:text-6xl mb-[3rem] text-center">
               Fernando Paulon
             </h2>
@@ -94,11 +94,11 @@ const BTT = () => {
           </div>
         </div>
       </div>
-      <div  className="flex flex-col items-center justify-center px-8 lg:px-32 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-fill text-white text-2xl">
-        <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
+      <div  className="flex flex-col items-center justify-center px-8 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-fill text-white text-2xl">
+        <h2 data-aos='fade-left' data-aos-delay='1000' className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
           BTT Geschichte
         </h2>
-        <p>
+        <p data-aos='fade-right' data-aos-delay='1000'>
           Das Brazilian Top Team hat seinen Ursprung bei Carlson Gracie und
           seiner Akademie. Gracie war ein Innovator im brasilianischen
           Jiu-Jitsu, er und seine Schüler hatten viele Techniken und Strategien

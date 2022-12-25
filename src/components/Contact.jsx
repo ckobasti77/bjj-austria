@@ -8,15 +8,15 @@ const Contact = ({ bg }) => {
                 <form action="https://formsubmit.co/bttwien@gmail.com" method="POST" class="space-y-8 flex flex-col">
                     <div data-aos='fade-left' data-aos-delay='700'>
                         <label htmlFor="email" class="block mb-2 text-sm font-medium text-white">E-MAIL</label>
-                        <input type="email" name="E-mail:" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:shadow-sm-light" placeholder="name@flowbite.com" required />
+                        <input type="email" name="E-mail:" id="email" class="focus:ring-[0px] shadow-sm bg-gray-50 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:shadow-sm-light" placeholder="name@flowbite.com" required />
                     </div>
                     <div data-aos='fade-left' data-aos-delay='800'>
                         <label htmlFor="subject" class="block mb-2 text-sm font-medium text-white">TELEFONNUMMER</label>
-                        <input type="number" name="Telefonnumer:" id="subject" class="block p-3 w-full text-sm  bg-gray-50 rounded-lg border border-gray-300 shadow-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-black  dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+                        <input type="number" name="Telefonnumer:" id="subject" class="focus:ring-[0px] block p-3 w-full text-sm  bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-black  dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
                     </div>
                     <div class="sm:col-span-2" data-aos='fade-left' data-aos-delay='900'>
                         <label htmlFor="message" class="block mb-2 text-sm font-medium text-white">NACHRICHT</label>
-                        <textarea id="message" name="Nachricht:" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Leave a comment..." required></textarea>
+                        <textarea id="message" name="Nachricht:" rows="6" class="focus:ring-[0px] block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Leave a comment..." required></textarea>
                     </div>
                     <button type="submit" class="py-3 px-5 min-w-[175px] text-sm mx-auto font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:outline-none dark:bg-primary-600 dark:hover:bg-primary-700 " data-aos='fade-left' data-aos-delay='1000'>Nachricht senden</button>
                 </form>

@@ -1,9 +1,10 @@
 import React from "react";
 // import Logo from "../img/logo.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
 
-const Nav = ({ home }) => {
+const Nav = ({ home, open, setOpen }) => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "BJJ", link: "/BJJ" },
@@ -14,10 +15,21 @@ const Nav = ({ home }) => {
     { name: "KONTAKT", link: "/Kontakt" },
   ];
 
-  const [open, setOpen] = useState(false);
+  // const [phoneNav, setPhoneNav] = useState(false)
+
+  // useEffect(() => {
+  //     if (window.innerWidth < 1280) {
+  //       setPhoneNav(true);
+  //     } else {
+  //       setPhoneNav(false);
+  //     }
+  //     console.log(window.innerWidth);
+  // }, [window.innerWidth])
+
 
   return (
-    <div className="w-full top-0 left-0 h-full">
+    <div>
+      <div className="w-full top-0 left-0 h-full">
       <div className={`xl:flex items-center justify-between py-2 xl:px-10 px-7 ${home ? 'bg-transparent' : 'bg-[#191919]'}`}>
         <div className="cursor-pointer flex items-center">
           <Link to="/" className="mr-1">
@@ -42,14 +54,17 @@ const Nav = ({ home }) => {
         <ul
           className={`xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto z-[-1] left-0 w-full xl:w-auto translate-all duration-500 ease-in  ${
             open
-              ? "opacity-100 bg-[#201E1F] h-full flex flex-col w-full z-20 fixed overlay  "
+              ? "opacity-100 bg-[#201E1F] h-full flex flex-col w-full z-20 fixed overlay"
               : "hidden"
           }`}
+          // data-aos={open ? 'fade-down' : ''}
+          // data-aos-delay={open ? '1000' : ''}
         >
           {Links.map((Link, i) => (
             <li
               key={i}
               className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold "
+              onClick={() => setOpen(false)}
             >
               <NavLink
                 to={Link.link}
@@ -106,6 +121,15 @@ const Nav = ({ home }) => {
         </ul>
       </div>
     </div>
+    {/* <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2 sticky top-0">
+        <p className="flex justify-around flex-wrap sliding-text w-screen py-1">
+          <span className="flex items-center"><span className="mx-1"><BsPinFill className="fill-[#FE0000]"/></span><span className="mx-1">Diefenbachgasse 46, 1150 Wien, Austria</span></span>
+          <span className="flex items-center"><span className="mx-1"><BsMailbox2 className="fill-[#FE0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
+          <span className="flex items-center"><span className="mx-1"><BsFillTelephoneFill className="fill-[#FE0000]"/></span><span className="mx-1">+43 (0) 6889623179</span></span>
+        </p>     
+      </div> */}
+    </div>
+    
   );
 };
 

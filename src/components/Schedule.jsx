@@ -8,7 +8,7 @@ const Schedule = () => {
                 <h1 className="text-6xl leading-tight text-white sm:text-4xl lg:text-5xl lg:leading-tight">Schauen Sie sich unseren aktualisierten Stundenplan unten an.</h1>
             </div>
             <div className='flex justify-center ' data-aos='fade-right' data-aos-delay='500'>
-                <img src="/./img/Table.png" alt='img' className='lg:h-[700px] content-center object-fit' />
+                <img src="/./img/Table.png" alt='Brazilian Top Team Austria' className='lg:h-[700px] content-center object-fit' />
             </div>
         </div>
     )

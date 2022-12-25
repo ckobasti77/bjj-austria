@@ -58,20 +58,7 @@
 } */
 
 .scrollToTop {
-  position: fixed;
-  bottom: 2.5vw;
-  right: 2.5vw;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
-  color: #fff;
-  font-size: 2.5rem;
-  background-color: #FE0000;
   border: none;
-  padding: 5px 10px 7.5px 10px;
-  border-radius: 30px;
-  width: 60px;
-  height: 60px;
-  transition: box-shadow 0.1s ease-in-out;
-  z-index: 99999999;
 }
 
 .scrollToTop:hover {

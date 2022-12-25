@@ -3,7 +3,7 @@ import React from 'react';
 
 function Mestre() {
     return (
-        <section class="lg:pt-10 bg-[url(/./img/BTT-bg-light.png)] bg-cover bg-no-repeat 2xl:py-16 2xl:bg-white sm:pt-16 md:pt-0">
+        <section class="lg:pt-10 bg-[#191919] xl:bg-[url(/./img/BTT-bg-light.png)] bg-cover bg-no-repeat 2xl:py-16 2xl:bg-white sm:pt-16 md:pt-0">
             <div class="px-4 mx-auto lg:rounded-md bg-[#191919] max-w-7xl sm:px-6 lg:px-8">
                 <div class="2xl:pl-24">
                     <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">

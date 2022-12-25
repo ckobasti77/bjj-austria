@@ -1,15 +1,16 @@
 import React from "react";
 import Contact from "../components/Contact";
 import Map from "../components/Map";
-import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
+import { BsPinFill, BsFillTelephoneFill } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
 const Kontakt = () => {
   return (
     <div>
-      <div className="bg-[#191919] flex justify-between text-white text-center text-sm">
+      <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2">
         <p className="flex justify-around flex-wrap sliding-text w-screen py-1">
           <span className="flex items-center"><span className="mx-1"><BsPinFill className="fill-[#FE0000]"/></span><span className="mx-1">Diefenbachgasse 46, 1150 Wien, Austria</span></span>
-          <span className="flex items-center"><span className="mx-1"><BsMailbox2 className="fill-[#FE0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
+          <span className="flex items-center"><span className="mx-1"><FiMail className="text-[#fe0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
           <span className="flex items-center"><span className="mx-1"><BsFillTelephoneFill className="fill-[#FE0000]"/></span><span className="mx-1">+43 (0) 6889623179</span></span>
         </p>     
       </div>

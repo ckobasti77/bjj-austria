@@ -9,22 +9,23 @@ import Schedule from "../components/Schedule";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
-const Home = () => {
+const Home = ({ open, setOpen }) => {
   const [homeNav, setHomeNav] = useState(true)
 
   return (
     <div className="overflow-x-hidden">
-      <Nav home={homeNav}/>
+      <Nav home={homeNav} open={open} setOpen={setOpen}/>
       <Header />
       <Mestre />
       <Bjj />
       <Schedule />
       <div>
-        <div className="bg-[#191919] flex justify-between text-white text-center text-sm">
+        <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2">
           <p className="flex flex-wrap justify-around sliding-text w-screen py-1">
             <span className="flex items-center"><span className="mx-1"><BsPinFill className="fill-[#FE0000]"/></span><span className="mx-1">Diefenbachgasse 46, 1150 Wien, Austria</span></span>
-            <span className="flex items-center"><span className="mx-1"><BsMailbox2 className="fill-[#FE0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
+            <span className="flex items-center"><span className="mx-1"><FiMail className="fill-[#FE0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
             <span className="flex items-center"><span className="mx-1"><BsFillTelephoneFill className="fill-[#FE0000]"/></span><span className="mx-1">+43 (0) 6889623179</span></span>
           </p>     
         </div>

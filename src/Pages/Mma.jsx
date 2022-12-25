@@ -16,30 +16,32 @@ const images = [
   { url: "/./img/mma/14.jpg", caption: "" },
   { url: "/./img/mma/15.jpg", caption: "" },
   { url: "/./img/mma/16.jpg", caption: "" },
+  { url: "/./img/mma/17.jpg", caption: "" },
+  { url: "/./img/mma/18.jpg", caption: "" },
 ];
 
 const Mma = () => {
   return (
     <div>
       <div className="flex items-center justify-center bg-[url(/./img/mma-belt-small.png)] md:bg-[url(/./img/mma-belt-phone.png)] lg:bg-[url(/./img/mma-belt.png)] bg-no-repeat bg-cover md:bg-cover min-h-[200px] my-auto">
-        <h1 className="text-[3.5rem] md:text-[5rem] text-center font-normal text-white">
+        <h1 data-aos='fade-down' data-aos-delay='700' className="text-[3.5rem] md:text-[5rem] text-center font-normal text-white">
           MIXED MARTIAL ARTS
         </h1>
       </div>
       <div className="bg-[url(/./img/BTT-bg.png)] bg-fill">
         <div className="flex flex-col-reverse lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
-          <div className="overflow-hidden h-full w-full lg:w-3/6 flex flex-col justify-center">
+          <div data-aos='fade-right' data-aos-delay='700' className="overflow-hidden h-full w-full lg:w-3/6 flex flex-col justify-center">
             <img
               src="/./img/mma/17.jpg"
               alt="1"
               className="h-[700px] hover:scale-120 object-cover w-full"
             />
           </div>
-          <div className="text-white md:text-justify p-4 w-full lg:w-3/6">
-            <h2 className="text-5xl md:text-6xl mt-16 mb-[3rem] text-center">
+          <div data-aos='fade-left' data-aos-delay='700' className="text-white md:text-justify p-4 w-full lg:w-3/6">
+            <h2 className="text-5xl xl:text-6xl mt-16 mb-[3rem] text-center">
               WAS IST MMA?
             </h2>
-            <p className="text-lg md:text-2xl px-8 md:px-24">
+            <p className="text-lg md:text-xl px-8 lg:px-16 xl:px-24 2xl:px-32">
               Mixed Martial Arts (MMA), manchmal auch als Cage Fighting, No
               Holds Barred (NHB) und Ultimate Fighting bezeichnet und
               ursprünglich als Vale Tudo bezeichnet, ist ein
@@ -53,11 +55,11 @@ const Mma = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
-          <div className="text-white p-4 w-full lg:w-3/6 flex flex-col justify-center">
-            <h2 className="text-5xl md:text-6xl mt-10 mb-[3rem] text-center">
+          <div data-aos='fade-right' data-aos-delay='700' className="text-white p-4 w-full lg:w-3/6 flex flex-col justify-center">
+            <h2 className="text-5xl xl:text-6xl mt-10 mb-[3rem] text-center">
               BJJ IN MMA
             </h2>
-            <ul className="list-disc text-lg md:text-xl px-8 md:px-24">
+            <ul className="list-disc text-lg md:text-xl px-8 lg:px-16 xl:px-24 2xl:px-32">
               <li className="pt-4">
                 Jiu-Jitsu baut Ihre Abwehrfähigkeiten auf
               </li>
@@ -83,11 +85,11 @@ const Mma = () => {
               </p>
             </ul>
           </div>
-          <div className="overflow-hidden w-full lg:w-3/6">
+          <div data-aos='fade-left' data-aos-delay='700' className="overflow-hidden w-full lg:w-3/6">
             <img
               src="/./img/mma/18.jpg"
               alt="1"
-              className="h-[700px] hover:scale-120 object-cover w-full"
+              className="h-[700px] lg:h-[900px] hover:scale-120 object-cover w-full"
             />
           </div>
         </div>
