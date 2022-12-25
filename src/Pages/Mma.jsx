@@ -26,11 +26,11 @@ const Mma = () => {
           MIXED MARTIAL ARTS
         </h1>
       </div>
-      <div className="bg-[url(/./img/BTT-bg.png)] bg-cover">
+      <div className="bg-[url(/./img/BTT-bg.png)] bg-fill">
         <div className="flex flex-col-reverse lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
-          <div className="overflow-hidden h-full w-full lg:w-3/6">
+          <div className="overflow-hidden h-full w-full lg:w-3/6 flex flex-col justify-center">
             <img
-              src="/./img/mma/4.jpg"
+              src="/./img/mma/17.jpg"
               alt="1"
               className="h-[700px] hover:scale-120 object-cover w-full"
             />
@@ -53,7 +53,7 @@ const Mma = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
-          <div className="text-white p-4 w-full lg:w-3/6">
+          <div className="text-white p-4 w-full lg:w-3/6 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl mt-10 mb-[3rem] text-center">
               BJJ IN MMA
             </h2>
@@ -85,7 +85,7 @@ const Mma = () => {
           </div>
           <div className="overflow-hidden w-full lg:w-3/6">
             <img
-              src="/./img/mma/16.jpg"
+              src="/./img/mma/18.jpg"
               alt="1"
               className="h-[700px] hover:scale-120 object-cover w-full"
             />

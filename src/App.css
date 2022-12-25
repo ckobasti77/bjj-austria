@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
-  font-family: 'Avenir';
+  font-family: "Avenir";
   src: url("./assets/fonts/AvenirLTStd-Black.otf");
 }
 
@@ -22,5 +22,60 @@
 
 .insta:hover {
   transition: background 0.5s ease-in-out;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
+
+@media only screen and (min-width: 1600px) {
+  .home-buttons {
+    padding: 0 10%;
+  }
+
+  .murilo {
+    height: 850px;
+  }
+}
+
+/* @keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Apply the animation to the element */
+.sliding-text {
+  animation: slide 60s linear infinite;
+  white-space: nowrap; /* Prevent the text from wrapping onto multiple lines */
+} */
+
+.scrollToTop {
+  position: fixed;
+  bottom: 2.5vw;
+  right: 2.5vw;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: #FE0000;
+  border: none;
+  padding: 5px 10px 7.5px 10px;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  transition: box-shadow 0.1s ease-in-out;
+  z-index: 99999999;
+}
+
+.scrollToTop:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+

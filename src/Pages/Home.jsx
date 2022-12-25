@@ -7,7 +7,8 @@ import Map from "../components/Map";
 import Contact from "../components/Contact";
 import Schedule from "../components/Schedule";
 import Nav from "../components/Nav";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
+import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
 
 const Home = () => {
   const [homeNav, setHomeNav] = useState(true)
@@ -19,9 +20,18 @@ const Home = () => {
       <Mestre />
       <Bjj />
       <Schedule />
-      <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#191919]">
-        <Map />
-        <Contact />
+      <div>
+        <div className="bg-[#191919] flex justify-between text-white text-center text-sm">
+          <p className="flex flex-wrap justify-around sliding-text w-screen py-1">
+            <span className="flex items-center"><span className="mx-1"><BsPinFill className="fill-[#FE0000]"/></span><span className="mx-1">Diefenbachgasse 46, 1150 Wien, Austria</span></span>
+            <span className="flex items-center"><span className="mx-1"><BsMailbox2 className="fill-[#FE0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
+            <span className="flex items-center"><span className="mx-1"><BsFillTelephoneFill className="fill-[#FE0000]"/></span><span className="mx-1">+43 (0) 6889623179</span></span>
+          </p>     
+        </div>
+        <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#191919]">
+          <Map />
+          <Contact />
+        </div>
       </div>
       <Footer />
     </div>

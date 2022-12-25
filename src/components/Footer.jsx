@@ -23,9 +23,9 @@ const Footer = () => {
 
         <nav aria-label="Footer Nav" className="mt-12">
           <ul className="flex flex-wrap justify-center gap-6 md:gap-8">
-            {Links.map((Link) => (
+            {Links.map((Link, i) => (
               <li
-                key={Links.name}
+                key={i}
                 className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold "
               >
                 <NavLink

@@ -1,6 +1,7 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BsChevronBarUp } from "react-icons/bs";
 
 // Aos
 import Aos from "aos";
@@ -19,9 +20,37 @@ import SharedLayout from "./components/SharedLayout";
 function App() {
   //aos initialization
   Aos.init({
-    duration: 2500,
-    delay: 400,
+    duration: 500,
+    delay: 150,
   });
+
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = (e) => {
+      const scrollHeight = e.target.documentElement.scrollHeight;
+      const currentHeight =
+        e.target.documentElement.scrollTop + window.innerHeight;
+      if (currentHeight >= 1000) {
+        setShowScrollToTop(true);
+      } else if (currentHeight < 1000) {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
@@ -36,7 +65,7 @@ function App() {
       <div className="App overflow-x-hidden">
         <Router>
           <Routes>
-              <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/" element={<SharedLayout />}>
               <Route path="/BJJ" element={<Bjj />} />
               <Route path="/MMA" element={<Mma />} />
@@ -47,6 +76,14 @@ function App() {
             </Route>
           </Routes>
         </Router>
+        <button
+          className="scrollToTop fixed bottom-[2.5vw] right-[2.5vw]"
+          onClick={() => scrollToTop()}
+          style={{ visibility: showScrollToTop ? "visible" : "hidden" }}
+          title="Scroll To Top"
+        >
+          <BsChevronBarUp />
+        </button>
       </div>
     )
   );

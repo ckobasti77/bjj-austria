@@ -14,7 +14,7 @@ const Bjj = () => {
                     <h2 className="max-w-7xl font-bold mx-auto mt-4 text-7xl text-white">FÜR SIE</h2>
                 </div>
 
-                <div className="grid grid-cols-1 gap-12 mt-8 md:grid-cols-2 m-4 md:m-32 md:mt-16 lg:gap-x-12">
+                <div className="grid home-buttons grid-cols-1 gap-12 mt-8 lg:grid-cols-2 m-4 md:m-32 md:mt-16 lg:gap-x-12">
                     <div className='transition duration-500 hover:scale-105'>
                         <a href=""><img src="/./img/MMA.png" alt="mma" className='w-full md:h-96 rounded-md' data-aos='fade-left' data-aos-delay='600' /></a>
                     </div>

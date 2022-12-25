@@ -2,24 +2,24 @@ import React from "react";
 import Gallery from "../components/Gallery";
 
 const images = [
-    { url: "/./img/BTT/1.jpeg", caption: "" },
-    { url: "/./img/BTT/2.jpg", caption: "" },
-    { url: "/./img/BTT/3.jpg", caption: "" },
-    { url: "/./img/BTT/4.jpg", caption: "" },
-    { url: "/./img/BTT/5.jpg", caption: "" },
-    { url: "/./img/BTT/6.jpg", caption: "" },
-    { url: "/./img/BTT/7.jpg", caption: "" },
-  ];
+  { url: "/./img/BTT/1.jpeg", caption: "" },
+  { url: "/./img/BTT/2.jpg", caption: "" },
+  { url: "/./img/BTT/3.jpg", caption: "" },
+  { url: "/./img/BTT/4.jpg", caption: "" },
+  { url: "/./img/BTT/5.jpg", caption: "" },
+  { url: "/./img/BTT/6.jpg", caption: "" },
+  { url: "/./img/BTT/7.jpg", caption: "" },
+];
 
 const BTT = () => {
   return (
     <div>
-      <div className="flex items-center justify-center bg-[url(/./img/BTT/btt-belt-small.png)] md:bg-[url(/./img/BTT/btt-belt-phone.png)] lg:bg-[url(/./img/BTT/btt-belt.png)] bg-no-repeat bg-cover md:bg-cover min-h-[200px] my-auto">
+      <div className="flex items-center justify-center bg-[url(/./img/BTT/btt-belt-small.png)] md:bg-[url(/./img/BTT/btt-belt-phone.png)] lg:bg-[url(/./img/BTT/btt-belt.png)] bg-no-repeat bg-cover min-h-[200px] my-auto">
         <h1 className="text-[3.5rem] md:text-[5rem] text-center font-normal text-white">
           BRAZILIAN TOP TEAM
         </h1>
       </div>
-      <div className="flex flex-col items-center justify-center px-8 lg:px-32 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-cover text-white text-2xl">
+      <div className="flex flex-col items-center justify-center px-8 lg:px-32 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-fill text-white text-2xl">
         <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
           ÜBER
         </h2>
@@ -33,16 +33,16 @@ const BTT = () => {
           schaffen.
         </p>
       </div>
-      <div className="flex justify-between px-8 lg:px-32 bg-[#191919] py-8">
+      <div className="flex justify-between px-8 lg:px-32 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
         <div className="flex flex-col-reverse lg:flex-row gap-y-8 gap-x-16 min-h-[700px] w-full mx-auto">
-          <div className="overflow-hidden h-full w-full lg:w-3/6">
+          <div className="overflow-hidden h-full w-full lg:w-5/12">
             <img
               src="/./img/BTT/murilo.jpg"
               alt="1"
-              className="h-[700px] object-cover w-full"
+              className="h-[700px] murilo object-cover w-full"
             />
           </div>
-          <div className="text-white md:text-justify my-auto w-full lg:w-3/6">
+          <div className="text-white md:text-justify my-auto w-full lg:w-7/12">
             <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
               Murilo Bustamante
             </h2>
@@ -58,21 +58,43 @@ const BTT = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between gap-x-16 lg:gap-x-64 px-8 lg:px-32 bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-cover w-screen py-8">
-        <div className="w-5/12 flex flex-col">
-          <h3 className="text-center text-white text-2xl lg:text-5xl mb-4">
-            Ricardo Libório
-          </h3>
-          <img src="/./img/BTT/Ricardo.jpg" alt="ricardo" className="" />
-        </div>
-        <div className="w-5/12 flex flex-col">
-          <h3 className="text-center text-white text-2xl lg:text-5xl mb-4">
-            Mário Sperry
-          </h3>
-          <img src="/./img/BTT/mario.jpg" alt="mario" className="m-0" />
+      <div className="flex justify-between px-8 lg:px-32 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
+        <div className="flex flex-col-reverse lg:flex-row-reverse gap-y-8 gap-x-16 min-h-[700px] w-full mx-auto">
+          <div className="overflow-hidden h-full w-full lg:w-5/12">
+            <img
+              src="/./img/bjj/1.jpg"
+              alt="1"
+              className="h-[825px] murilo object-cover w-full"
+            />
+          </div>
+          <div className="text-white md:text-justify my-auto w-full lg:w-7/12">
+            <h2 className="text-5xl md:text-6xl mb-[3rem] text-center">
+              Fernando Paulon
+            </h2>
+            <p className="text-lg md:text-2xl">
+              Fernando Paulon ist ein Schwarzgurt im 5. Grad im Brazilian
+              Jiu-Jitsu unter der Ausbildung des legendären Mixed Martial
+              Artists Murilo Bustamante. Im Alter von 16 Jahren schrieb sich
+              Fernando Paulon an der Carlson Gracie School ein und trainierte im
+              Anschluss im Brazilian Top Team, welches vom ehemaligen UFC
+              Mittelgewicht Champion Murilo Bustamante gegründet und geleitet
+              wurde. Paulon ist somit eines der längsten und erfahrensten
+              Mitglieder des Brazilian Top Teams. Im Laufe seines Lebens
+              trainierte Fernando Paulon mit den besten Kämpfern der Welt,
+              darunter Rodrigo Minotauro, Vitor Belfort oder Ricardo Arona und
+              entwickelte sich und seine Jiu-Jitsu Technik hervorragend weiter.
+              Durch die zahlreiche Teilnahme an weltweiten namhaften Wettkämpfen
+              im Jiu-Jitsu, Grappling und MMA konnte sich Paulon immer wieder
+              beweisen. Nicht zuletzt trainierte er die besten Kämpfer
+              Österreichs wie Nandor Guelmino, den ersten österreichischen UFC
+              Kämpfer oder Aleksander Rakic, ein Top 10 UFC Kämpfer. 2013
+              erhielt Fernando Paulon die Auszeichnung des Top Trainer des
+              Jahres in Österreich.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center px-8 lg:px-32 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-cover text-white text-2xl">
+      <div  className="flex flex-col items-center justify-center px-8 lg:px-32 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-fill text-white text-2xl">
         <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
           BTT Geschichte
         </h2>
@@ -81,7 +103,7 @@ const BTT = () => {
           seiner Akademie. Gracie war ein Innovator im brasilianischen
           Jiu-Jitsu, er und seine Schüler hatten viele Techniken und Strategien
           im BJJ erfunden und verfeinert und in einem sehr aggressiven und
-          körperlichen Stil gekämpft und bei Turnieren viel Erfolg erzielt.{" "}
+          körperlichen Stil gekämpft und bei Turnieren viel Erfolg erzielt.
           <br />
           <br />
           Seine Akademie war auch ein Pionier der gemischten Kampfkünste, eine

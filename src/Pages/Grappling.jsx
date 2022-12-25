@@ -18,11 +18,11 @@ const Grappling = () => {
           GRAPPLING
         </h1>
       </div>
-      <div className="bg-[url(/./img/BTT-bg.png)] bg-cover">
+      <div className="bg-[url(/./img/BTT-bg.png)] bg-fill">
         <div className="flex flex-col-reverse lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
           <div className="overflow-hidden h-full w-full lg:w-3/6">
             <img
-              src="/./img/grappling/1.jpg"
+              src="/./img/grappling/2.jpg"
               alt="1"
               className="h-[700px] hover:scale-120 object-cover w-full"
             />
@@ -58,7 +58,7 @@ const Grappling = () => {
           </div>
           <div className="overflow-hidden w-full lg:w-3/6">
             <img
-              src="/./img/bjj/unnamed8.jpg"
+              src="/./img/grappling/1.jpg"
               alt="1"
               className="h-[700px] hover:scale-120 object-cover w-full"
             />

@@ -35,16 +35,16 @@ const Bjj = () => {
           BRAZILIAN JIU JITSU
         </h1>
       </div>
-      <div className="bg-[url(/./img/BTT-bg.png)] bg-cover">
-        <div className="flex flex-col-reverse lg:flex-row gap-y-8 min-h-[500px] w-full mx-auto">
+      <div>
+        <div className="flex flex-col-reverse lg:flex-row gap-y-8 bg-[url(/./img/BTT-bg.png)] bg-fill min-h-[500px] w-full mx-auto">
           <div className="overflow-hidden h-full w-full lg:w-3/6">
             <img
-              src="/./img/bjj/unnamed6.jpg"
+              src="/./img/bjj/11.png"
               alt="1"
               className="h-full hover:scale-120 object-cover w-full"
             />
           </div>
-          <div className="text-white md:text-justify p-4 w-full lg:w-3/6">
+          <div className="text-white md:text-justify w-full lg:w-3/6 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl mt-16 mb-[3rem] text-center">
               WAS IST BJJ?
             </h2>
@@ -59,8 +59,8 @@ const Bjj = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-y-8 min-h-[500px] w-full mx-auto">
-          <div className="text-white md:text-justify p-4 w-full lg:w-3/6">
+        <div className="flex flex-col bg-[url(/./img/BTT-bg.png)] bg-fill lg:flex-row gap-y-8 min-h-[500px] w-full mx-auto">
+          <div className="text-white md:text-justify w-full lg:w-3/6 flex flex-col justify-center">
             <h2 className="text-5xl md:text-6xl mt-10 mb-[3rem] text-center">
               KINDER BJJ
             </h2>
@@ -78,7 +78,7 @@ const Bjj = () => {
           </div>
           <div className="overflow-hidden w-full lg:w-3/6">
             <img
-              src="/./img/bjj/unnamed8.jpg"
+              src="/./img/bjj/12.png"
               alt="1"
               className="h-full hover:scale-120 object-cover w-full"
             />
