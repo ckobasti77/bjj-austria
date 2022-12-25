@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/./img/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
+    />
+    <meta
+      name="description"
+      content="Das Brazilian Top Team Austria wurde 2020 gegründet und hat sich zum Ziel gesetzt, die Präsenz des brasilianischen Jiu-Jitsu im Land zu erhöhen."
+      data-rh="true"
+    />
+    <title>Brazilian Top Team Austria</title>
+    <style>
+      .container1 {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100vw;
+        background-color: #201e1f;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/./img/logo.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
-  <title>Brazilian Top Team Austria</title>
-  <style>
-    .container1 {
-      align-items: center;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      width: 100vw;
-      background-color: #201e1f;
-    }
-  </style>
-</head>
+  <body>
+    <div id="spinner" class="container1">
+      <img src="/./img/spinner1.gif" alt="logo" class="logo-loader" />
+    </div>
+    <div id="root"></div>
 
-<body>
-  <div id="spinner" class="container1">
-    <img src="/./img/spinner1.gif" alt="logo" class="logo-loader" />
-  </div>
-  <div id="root"> </div>
-
-
-  <script type="module" src="/src/main.jsx"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="../path/to/flowbite/dist/flowbite.js"></script>
-</body>
-
+    <script type="module" src="/src/main.jsx"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+  </body>
 </html>

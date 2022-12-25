@@ -3,9 +3,11 @@ import React from 'react'
 // import mma from '../img/MMA.png';
 // import grappling from '../img/Grappling.png';
 // import kinder from '../img/Kinder.png';
+import { Helmet } from 'react-helmet-async'
 
 
 const Bjj = () => {
+    
     return (
         <section className="py-10 bg-[#191919] lg:py-24" >
             <div className="px-4 mx-auto lg:px-8 w-full" data-aos='fade-left' data-aos-delay='400'>
