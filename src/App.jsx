@@ -2,11 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BsChevronBarUp } from "react-icons/bs";
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks,
-} from "body-scroll-lock";
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 // Aos
@@ -59,16 +55,16 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (open === true) {
-      disableBodyScroll(document.getElementById("app"));
+    if(open === true) {
+      disableBodyScroll(document.getElementById('app'))
     } else {
-      enableBodyScroll(document.getElementById("app"));
+      enableBodyScroll(document.getElementById('app'))
     }
 
     return () => {
       clearAllBodyScrollLocks();
-    };
-  }, []);
+    }
+  }, [])
 
   const [open, setOpen] = useState(false);
 
@@ -81,43 +77,32 @@ function App() {
     }, 500);
   }
   return (
-    <HelmetProvider>
-      {!loading && (
-        <div id="app" className="App overflow-x-hidden">
-          <Router>
-            <Routes>
-              <Route
-                path="/"
-                element={<Home open={open} setOpen={setOpen} />}
-              />
-              <Route
-                path="/"
-                element={<SharedLayout open={open} setOpen={setOpen} />}
-              >
-                <Route path="/BJJ" element={<Bjj />} />
-                <Route path="/MMA" element={<Mma />} />
-                <Route path="/Grappling" element={<Grappling />} />
-                <Route path="/BTT" element={<BTT />} />
-                <Route path="/Preis" element={<Preis />} />
-                <Route path="/Kontakt" element={<Kontakt />} />
-              </Route>
-            </Routes>
-          </Router>
-          <button
-            className="scrollToTop fixed bottom-[2.5vw] right-[2.5vw] bg-[#FE0000] text-[2.5rem] text-[#fff] p-[10px] rounded-lg border-none z-100"
-            onClick={() => scrollToTop()}
-            style={{
-              visibility: showScrollToTop ? "visible" : "hidden",
-              boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.75)",
-            }}
-            title="Scroll To Top"
-            data-aos="fade-left"
-          >
-            <BsChevronBarUp />
-          </button>
-        </div>
-      )}
-    </HelmetProvider>
+    !loading && (
+      <div id="app" className="App overflow-x-hidden">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home open={open} setOpen={setOpen} />} />
+            <Route path="/" element={<SharedLayout open={open} setOpen={setOpen} />}>
+              <Route path="/BJJ" element={<Bjj />} />
+              <Route path="/MMA" element={<Mma />} />
+              <Route path="/Grappling" element={<Grappling />} />
+              <Route path="/BTT" element={<BTT />} />
+              <Route path="/Preis" element={<Preis />} />
+              <Route path="/Kontakt" element={<Kontakt />} />
+            </Route>
+          </Routes>
+        </Router>
+        <button
+          className="scrollToTop fixed bottom-[2.5vw] right-[2.5vw] bg-[#FE0000] text-[2.5rem] text-[#fff] p-[10px] rounded-lg border-none z-100"
+          onClick={() => scrollToTop()}
+          style={{ visibility: showScrollToTop ? "visible" : "hidden", boxShadow:'0px 0px 0px 0px rgba(0,0,0,0.75)' }}
+          title="Scroll To Top"
+          data-aos='fade-left'
+        >
+          <BsChevronBarUp />
+        </button>
+      </div>
+    )
   );
 }
 
