@@ -1,4 +1,8 @@
 import React from 'react';
+import firstpic from '/./img/mestre.jpg';
+import secondpic from '/./img/bjj/3.jpg';
+import thirdpic from '/./img/bjj/unnamed10.jpg';
+
 const images = [
     '/./img/mestre.jpg',
     '/./img/bjj/3.jpg',
@@ -10,13 +14,13 @@ const Header = () => {
             <div id="indicators-carousel" className="z-[99999] mt-[96px] relative h-[67vh] lg:h-[87vh] py-[1vh] bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-cover bg-no-repeat" data-carousel="slide">
                 <div className="relative min-h-[65vh] lg:min-h-[85vh] py-[1vh] overflow-hidden rounded-lg md:h-96">
                      <div className="hidden duration-700 ease-in-out" data-carousel-item="active">
-                         <img src="/./img/mestre.jpg" className="absolute block object-fit h-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Brazilian Top Team Austria Trainer" />
+                         <img src={firstpic} className="absolute block object-fit h-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Brazilian Top Team Austria Trainer" />
                      </div>
                      <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/./img/bjj/3.jpg" className="absolute block object-fit h-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Brazilian Jiu Jitsu" />
+                            <img src={secondpic} className="absolute block object-fit h-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Brazilian Jiu Jitsu" />
                      </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                           <img src="/./img/bjj/unnamed10.jpg" className="absolute block object-fit h-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Brazilian Jiu Jitsu" />
+                           <img src={thirdpic} className="absolute block object-fit h-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Brazilian Jiu Jitsu" />
                     </div>
                 </div>
                 <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
