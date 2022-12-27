@@ -5,7 +5,7 @@ function Mestre() {
     return (
         <section className="pt-10 bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)]  bg-cover bg-no-repeat 2xl:py-16 sm:pt-16 md:pt-0">
             <div className="mx-auto lg:rounded-3xl bg-[#E5E5E5]/75 background-blur-sm backdrop-blur-sm dark:bg-[#252525]/75 max-w-7xl sm:px-6 lg:p-8 relative overflow-hidden">
-                <img src="/./img/logo.jpg" alt="logo" className='absolute w-[200px] top-[-75px] xl:left-[-75px] right-[-75px] xl:rotate-[-30deg] rotate-[30deg]' />
+                <img src="/./img/logo.jpg" alt="logo" className='hidden md:visible absolute w-[200px] top-[-75px] xl:left-[-75px] right-[-75px] xl:rotate-[-30deg] rotate-[30deg]' />
                 <div className="2xl:pl-24">
                     <div className="flex flex-col xl:flex-row gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
                         <div className="mx-8 xl:mx-0 text-center xl:w-7/12 md:py-16 xl:py-24 md:text-left">

@@ -2,7 +2,7 @@ import React from "react";
 // import logo from '../img/logo.jpg';
 import { Link, NavLink } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ scrollToTop }) => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "BJJ", link: "/BJJ" },
@@ -17,7 +17,7 @@ const Footer = () => {
     <footer aria-label="Site Footer" className="bg-[#e0e0e0] dark:bg-[#191919]">
       <div className="w-full h-[50px] bg-[url(/./img/footer-bg.png)] bg-no-repeat bg-cover"></div>
       <div className="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
-        <Link className="flex justify-center text-teal-600">
+        <Link className="flex justify-center text-teal-600" onClick={() => scrollToTop()}>
           <img src="/./img/logo.jpg" alt="brazilian-top-team" className="w-32" />
         </Link>
 
@@ -27,6 +27,7 @@ const Footer = () => {
               <li
                 key={i}
                 className="lg:w-[14.2%]  xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center py-1 font-bold"
+                onClick={() => scrollToTop()}
               >
                 <NavLink
                   to={Link.link}
