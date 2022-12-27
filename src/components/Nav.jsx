@@ -49,7 +49,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
   }, [window.innerWidth]);
 
   return (
-    <div className="w-full fixed z-[99999]">
+    <div className="w-full fixed z-[999999]">
       <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#e0e0e0] dark:bg-[#191919]">
         <div className="flex justify-between items-center">
           <div className="cursor-pointer flex items-center">
@@ -95,7 +95,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
         </div>
 
         <ul
-          className={`z-[99999999] bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto xl:transition-none transition-visibility duration-500 ease-in  ${
+          className={`bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto xl:transition-none transition-visibility duration-500 ease-in  ${
             open
               ? "opacity-100 h-screen flex flex-col w-full fixed left-0 right-0 z-[1001] mx-auto overflow-hidden overscroll-none"
               : "hidden"
