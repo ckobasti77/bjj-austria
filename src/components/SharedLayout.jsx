@@ -3,12 +3,12 @@ import { Outlet } from 'react-router-dom';
 import Nav from './Nav';
 import Footer from './Footer';
 
-const SharedLayout = ({ open, setOpen}) => {
+const SharedLayout = ({ open, setOpen, theme, setTheme, scrollToTop }) => {
   return (
     <div className="h-full">
-        <Nav open={open} setOpen={setOpen} />
+        <Nav open={open} setOpen={setOpen} theme={theme} setTheme={setTheme} scrollToTop={scrollToTop} />
         <Outlet />
-        <Footer />
+        <Footer scrollToTop={scrollToTop}/>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Gallery from "../components/Gallery";
+import ReactPlayer from "react-player";
 import { Helmet } from "react-helmet-async";
 
 const images = [
@@ -15,26 +16,24 @@ const Grappling = () => {
   return (
     <>
       <Helmet>
-        <title>
-        Trainiere das Grappling mit dem brasilianischen Top-Team.
-        </title>
+        <title>Trainiere das Grappling mit dem brasilianischen Top-Team.</title>
         <meta
           name="description"
           content="Trainiere das Grappling mit dem brasilianischen Top-Team."
         />
         <link rel="canonical" href="/Grappling" />
       </Helmet>
-      <div>
+      <div className="pt-[96px]">
         <div className="flex items-center justify-center bg-[url(/./img/bjj-belt-small.png)] md:bg-[url(/./img/bjj-belt-phone.png)] lg:bg-[url(/./img/bjj-belt.png)] bg-no-repeat bg-cover md:bg-cover min-h-[200px] my-auto">
           <h1
             data-aos="fade-down"
             data-aos-delay="700"
-            className="text-[3.5rem] md:text-[5rem] text-center font-normal text-white"
+            className="text-[3rem] md:text-[4rem] lg:text-[5rem] text-center font-normal text-white"
           >
             GRAPPLING
           </h1>
         </div>
-        <div className="bg-[url(/./img/BTT-bg.png)] bg-fill">
+        <div className="bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-fill">
           <div className="flex flex-col-reverse lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
             <div
               data-aos="fade-right"
@@ -44,18 +43,18 @@ const Grappling = () => {
               <img
                 src="/./img/grappling/2.jpg"
                 alt="1"
-                className="h-[700px] hover:scale-120 object-cover w-full"
+                className="h-full lg:h-[700px] hover:scale-120 object-cover w-full"
               />
             </div>
             <div
               data-aos="fade-left"
               data-aos-delay="700"
-              className="text-white md:text-justify p-4 w-full lg:w-3/6"
+              className="md:text-justify p-4 w-full lg:w-3/6 text-[#252525] dark:text-[#e0e0e0]"
             >
-              <h2 className="text-5xl md:text-6xl mt-16 mb-[3rem] text-center">
+              <h2 className="text-5xl md:text-6xl mt-16 mb-[3rem] text-center text-[#252525] dark:text-[#e0e0e0]">
                 WAS IST GRAPPLING?
               </h2>
-              <p className="text-lg md:text-xl px-8 md:px-24">
+              <p className="text-lg md:text-xl px-8 md:px-18 text-[#252525] dark:text-[#e0e0e0]">
                 Grappling, im Nahkampf, beschreibt Sportarten, die darin
                 bestehen, den Gegner zu greifen oder zu ergreifen. Grappling
                 wird aus nächster Nähe verwendet, um einen körperlichen Vorteil
@@ -67,13 +66,13 @@ const Grappling = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto">
+          <div className="flex flex-col lg:flex-row gap-y-8 min-h-[700px] w-full mx-auto mt-8 lg:mt-0">
             <div
               data-aos="fade-right"
               data-aos-delay="700"
               className="text-white md:text-justify p-4 w-full flex items-center lg:w-3/6"
             >
-              <p className="text-lg md:text-xl px-8 md:px-24">
+              <p className="text-lg md:text-xl px-8 md:px-12 text-[#252525] dark:text-[#e0e0e0]">
                 Grappling beinhaltet meistens kein Schlagen oder den Einsatz von
                 Waffen. Einige Kampfstile oder Kampfkünste, die besonders für
                 ihre Grappling-Techniken bekannt sind, lehren jedoch Taktiken,
@@ -93,10 +92,18 @@ const Grappling = () => {
               <img
                 src="/./img/grappling/1.jpg"
                 alt="1"
-                className="h-[700px] hover:scale-120 object-cover w-full"
+                className="h-full lg:h-[700px] hover:scale-120 object-cover w-full"
               />
             </div>
           </div>
+        </div>
+        <div className="w-full bg-black flex-justify-center h-4/6 items-center">
+          <video
+            controls
+            src="/./img/video1.mp4"
+            type="video/mp4"
+            className="w-4/6 h-4/6"
+          />
         </div>
         <Gallery images={images} />
       </div>

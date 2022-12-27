@@ -18,8 +18,8 @@ const Kontakt = () => {
         />
         <link rel="canonical" href="/Kontakt" />
       </Helmet>
-      <div>
-        <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2">
+      <div className="pt-[96px]">
+        <div className="bg-[#e0e0e0] dark:bg-[#191919] flex justify-between text-[#252525] dark:text-white text-center text-sm md:text-xl py-2">
           <p className="flex justify-around flex-wrap sliding-text w-screen py-1">
             <span className="flex items-center">
               <span className="mx-1">
@@ -43,7 +43,7 @@ const Kontakt = () => {
             </span>
           </p>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#191919]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#e0e0e0] dark:bg-[#191919]">
           <Map />
           <Contact />
         </div>

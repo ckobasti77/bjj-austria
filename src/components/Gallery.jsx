@@ -7,8 +7,8 @@ import { Carousel } from "react-responsive-carousel";
 
 const Gallery = ({ images }) => {
   return (
-    <div className="bg-[url(/./img/BTT-bg.png)] bg-fill p-8">
-      <h1 data-aos='fade-left' data-aos-delay='700' className="text-5xl md:text-6xl mt-10 mb-[3rem] text-center text-white">GALERIE</h1>
+    <div className="bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-fill p-8">
+      <h1 data-aos='fade-left' data-aos-delay='700' className="text-5xl md:text-6xl mt-10 mb-[3rem] text-center text-[#252525] dark:text-[#e0e0e0]">GALERIE</h1>
       <div data-aos='fade-right' data-aos-delay='700' className="slide-container min-h-[400px] md:min-h-[600px]">
         <Fade>
           {images.map((slideImage, index) => (
@@ -24,7 +24,6 @@ const Gallery = ({ images }) => {
         </Fade>
       </div>
     </div>
-   
   );
 };
 

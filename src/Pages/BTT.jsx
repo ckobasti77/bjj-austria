@@ -10,6 +10,8 @@ const images = [
   { url: "/./img/BTT/5.jpg", caption: "" },
   { url: "/./img/BTT/6.jpg", caption: "" },
   { url: "/./img/BTT/7.jpg", caption: "" },
+  { url: "/./img/BTT/mario.jpg", caption: "" },
+  { url: "/./img/BTT/Ricardo.jpg", caption: "" },
 ];
 
 const BTT = () => {
@@ -20,7 +22,7 @@ const BTT = () => {
         <meta name="description" content="Das beste Jiu-Jitsu-Team Österreichs." />
         <link rel="canonical" href="/BTT" />
       </Helmet>
-      <div>
+      <div className="pt-[96px]">
         <div className="flex items-center justify-center bg-[url(/./img/BTT/btt-belt-small.png)] md:bg-[url(/./img/BTT/btt-belt-phone.png)] lg:bg-[url(/./img/BTT/btt-belt.png)] bg-no-repeat bg-cover min-h-[200px] my-auto">
           <h1
             data-aos="fade-down"
@@ -30,15 +32,15 @@ const BTT = () => {
             BRAZILIAN TOP TEAM
           </h1>
         </div>
-        <div className="flex flex-col items-center justify-center px-8 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-fill text-white text-2xl">
+        <div className="flex flex-col items-center justify-center px-8 py-8 text-justify bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-no-repeat bg-fill text-white text-2xl">
           <h2
             data-aos="fade-left"
             data-aos-delay="1000"
-            className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center"
+            className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center text-[#252525] dark:text-[#e0e0e0]"
           >
             ÜBER
           </h2>
-          <p data-aos="fade-right" data-aos-delay="1000">
+          <p data-aos="fade-right" data-aos-delay="1000" className="text-[#252525] dark:text-[#e0e0e0]">
             Das Brazilian Top Team (BTT) ist eine Akademie, die sich auf
             Brazilian Jiu Jitsu und Mixed Martial Arts spezialisiert hat. Es
             wurde im April 2000 von Murilo Bustamante, Ricardo Libório, Mário
@@ -48,7 +50,7 @@ const BTT = () => {
             und zu schaffen.
           </p>
         </div>
-        <div className="flex justify-between px-8 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
+        <div className="flex justify-between px-8 bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
           <div className="flex flex-col-reverse lg:flex-row gap-y-8 gap-x-16 min-h-[700px] w-full mx-auto">
             <div
               data-aos="fade-right"
@@ -66,10 +68,10 @@ const BTT = () => {
               data-aos-delay="700"
               className="text-white md:text-justify my-auto w-full lg:w-7/12"
             >
-              <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center">
+              <h2 className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center text-[#252525] dark:text-[#e0e0e0]">
                 Murilo Bustamante
               </h2>
-              <p className="text-lg md:text-2xl">
+              <p className="text-lg md:text-2xl text-[#252525] dark:text-[#e0e0e0]">
                 Murilo Bustamante (* 30. Juli 1966 in Rio de Janeiro) ist ein
                 pensionierter brasilianischer Mixed Martial Artist und
                 ehemaliger UFC-Champion im Mittelgewicht. Er ist einer der
@@ -82,7 +84,7 @@ const BTT = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between px-8 bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
+        <div className="flex justify-between px-8 bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-fill py-8">
           <div className="flex flex-col-reverse lg:flex-row-reverse gap-y-8 gap-x-16 min-h-[700px] w-full mx-auto">
             <div
               data-aos="fade-left"
@@ -100,10 +102,10 @@ const BTT = () => {
               data-aos-delay="700"
               className="text-white md:text-justify my-auto w-full lg:w-7/12"
             >
-              <h2 className="text-5xl md:text-6xl mb-[3rem] text-center">
+              <h2 className="text-5xl md:text-6xl mb-[3rem] text-center text-[#252525] dark:text-[#e0e0e0]">
                 Fernando Paulon
               </h2>
-              <p className="text-lg md:text-2xl">
+              <p className="text-lg md:text-2xl text-[#252525] dark:text-[#e0e0e0]">
                 Fernando Paulon ist ein Schwarzgurt im 5. Grad im Brazilian
                 Jiu-Jitsu unter der Ausbildung des legendären Mixed Martial
                 Artists Murilo Bustamante. Im Alter von 16 Jahren schrieb sich
@@ -126,15 +128,15 @@ const BTT = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center px-8 py-8 text-justify bg-[url(/./img/BTT-bg.png)] bg-fill text-white text-2xl">
+        <div className="flex flex-col items-center justify-center px-8 py-8 text-justify bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)] bg-fill text-white text-2xl">
           <h2
             data-aos="fade-left"
             data-aos-delay="1000"
-            className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center"
+            className="text-5xl md:text-6xl mt-4 mb-[3rem] text-center text-[#252525] dark:text-[#e0e0e0]"
           >
             BTT Geschichte
           </h2>
-          <p data-aos="fade-right" data-aos-delay="1000">
+          <p data-aos="fade-right" data-aos-delay="1000" className="text-[#252525] dark:text-[#e0e0e0]">
             Das Brazilian Top Team hat seinen Ursprung bei Carlson Gracie und
             seiner Akademie. Gracie war ein Innovator im brasilianischen
             Jiu-Jitsu, er und seine Schüler hatten viele Techniken und

@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer aria-label="Site Footer" className="bg-[#191919]">
+    <footer aria-label="Site Footer" className="bg-[#e0e0e0] dark:bg-[#191919]">
       <div className="w-full h-[50px] bg-[url(/./img/footer-bg.png)] bg-no-repeat bg-cover"></div>
       <div className="mx-auto max-w-5xl px-4 py-4 sm:px-6 lg:px-8">
         <Link className="flex justify-center text-teal-600">
@@ -22,15 +22,15 @@ const Footer = () => {
         </Link>
 
         <nav aria-label="Footer Nav" className="mt-12">
-          <ul className="flex flex-wrap justify-center gap-6 md:gap-8">
+          <ul className="flex flex-wrap md:flex-nowrap justify-center gap-6 md:gap-8">
             {Links.map((Link, i) => (
               <li
                 key={i}
-                className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold "
+                className="lg:w-[14.2%]  xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center py-1 font-bold"
               >
                 <NavLink
                   to={Link.link}
-                  className="text-[#fff] transition hover:text-gray-700/75 text-xl font-bold"
+                  className="text-[#252525] dark:text-[#ccc] hover:text-[#5c5c5c] dark:hover:text-white transition hover:text-gray-700/75 text-xl font-bold"
                 >
                   {Link.name}
                 </NavLink>
@@ -45,7 +45,7 @@ const Footer = () => {
               href="/"
               rel="noreferrer"
               target="_blank"
-              className="text-[#fff] transition hover:text-[#4267b2]"
+              className="text-[#252525] dark:text-[#ccc] transition hover:text-[#4267b2]"
             >
               <span class="sr-only">Facebook</span>
               <svg
@@ -68,7 +68,7 @@ const Footer = () => {
               href="/"
               rel="noreferrer"
               target="_blank"
-              className="text-[#fff]"
+              className="text-[#252525] dark:text-[#ccc]"
             >
               <span class="sr-only">Instagram</span>
               <svg

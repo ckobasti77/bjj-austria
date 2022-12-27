@@ -1,10 +1,8 @@
-import React from "react";
-// import Logo from "../img/logo.jpg";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
+import '../App.css';
 
-const Nav = ({ home, open, setOpen }) => {
+const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
   let Links = [
     { name: "HOME", link: "/" },
     { name: "BJJ", link: "/BJJ" },
@@ -15,46 +13,91 @@ const Nav = ({ home, open, setOpen }) => {
     { name: "KONTAKT", link: "/Kontakt" },
   ];
 
-  // const [phoneNav, setPhoneNav] = useState(false)
+  const [sun, setSun] = useState("");
+  const [day, setDay] = useState("");
 
-  // useEffect(() => {
-  //     if (window.innerWidth < 1280) {
-  //       setPhoneNav(true);
-  //     } else {
-  //       setPhoneNav(false);
-  //     }
-  //     console.log(window.innerWidth);
-  // }, [window.innerWidth])
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark").matches) {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  }, []);
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "" : "dark");
+    setSun(sun === "sun" ? "" : "sun");
+    setDay(day === "day" ? "" : "day");
+  };
 
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const [phoneNav, setPhoneNav] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 1280) {
+      setPhoneNav(true);
+    } else {
+      setPhoneNav(false);
+    }
+    console.log(window.innerWidth);
+  }, [window.innerWidth]);
 
   return (
-    <div>
-      <div className="w-full top-0 left-0 h-full">
-      <div className={`xl:flex items-center justify-between py-2 xl:px-10 px-7 ${home ? 'bg-transparent' : 'bg-[#191919]'}`}>
-        <div className="cursor-pointer flex items-center">
-          <Link to="/" className="mr-1">
-            <img
-              src="/./img/logo.jpg"
-              alt="Logo Brazilian Top Team Austria"
-              className="max-w-46 h-20 object-fill"
-              id="logo"
-            />
-          </Link>
-        </div>
-        <div
-          onClick={() => setOpen(!open)}
-          className="text-3xl xl:text-5xl absolute right-10 top-6 cursor-pointer xl:hidden my-2.5 h-[30px]"
-        >
-          <ion-icon
-            name={open ? "close" : "menu"}
-            className="text-white"
-          ></ion-icon>
+    <div className="w-full fixed z-[99999]">
+      <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#E5E5E5] dark:bg-[#191919]">
+        <div className="flex justify-between items-center">
+          <div className="cursor-pointer flex items-center">
+            <Link to="/" className="mr-1" onClick={() => scrollToTop()}>
+              <img
+                src="/./img/logo.jpg"
+                alt="Logo Brazilian Top Team Austria"
+                className="max-w-46 h-20 object-fill"
+                id="logo"
+              />
+            </Link>
+          </div>
+          <div className="inline">
+            {/* <button
+                type="button"
+                onClick={() => handleThemeSwitch()}
+                className="relative inline-flex flex-shrink-0 w-20 h-4 transition-colors duration-200 ease-in-out bg-[#E5E5E5] rounded cursor-pointer focus:outline-none"
+                role="switch"
+              >
+                <span
+                  aria-hidden="true"
+                  className={`inline-block w-10 h-4 transition duration-200 ease-in-out ${
+                    theme === 'dark' ? "translate-x-0" : "translate-x-10"
+                  } bg-[#191919] rounded shadow pointer-events-none`}
+                ></span>
+              </button> */}
+            <div
+              class={day === "day" ? "tdnn scale-50 hover:scale-[0.55] cursor-pointer" : "day tdnn scale-50 hover:scale-[0.55] cursor-pointer"}
+              onClick={() => handleThemeSwitch()}
+            >
+              <div class={sun === "sun" ? "moon" : "sun moon"}></div>
+            </div>
+          </div>
+          <div
+            onClick={() => setOpen(!open)}
+            className="text-3xl xl:text-5xl right-10 top-6 cursor-pointer inline xl:hidden my-2.5 h-[30px]"
+          >
+            <ion-icon
+              name={open ? "close" : "menu"}
+              className="text-white"
+            ></ion-icon>
+          </div>
         </div>
 
         <ul
-          className={`xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto z-[-1] left-0 w-full xl:w-auto translate-all duration-500 ease-in  ${
+          className={`z-[99999999] bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto xl:transition-none transition-visibility duration-500 ease-in  ${
             open
-              ? "opacity-100 bg-[#201E1F] h-full flex flex-col w-full z-20 fixed overlay"
+              ? "opacity-100 h-screen flex flex-col w-full fixed left-0 right-0 z-[1001] mx-auto overflow-hidden overscroll-none"
               : "hidden"
           }`}
           // data-aos={open ? 'fade-down' : ''}
@@ -63,23 +106,24 @@ const Nav = ({ home, open, setOpen }) => {
           {Links.map((Link, i) => (
             <li
               key={i}
-              className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold "
+              className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold"
               onClick={() => setOpen(false)}
             >
               <NavLink
                 to={Link.link}
-                className="text-[#ccc] hover:text-white duration-500"
+                className="text-[#252525] dark:text-[#ccc] hover:text-[#5c5c5c] dark:hover:text-white duration-500"
+                onClick={() => scrollToTop()}
               >
                 {Link.name}
               </NavLink>
             </li>
           ))}
-          <li className="xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold ">
+          <li className="xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 mx-auto py-1 font-bold ">
             <a
               href="https://www.facebook.com/bttaustria"
               rel="noreferrer"
               target="_blank"
-              className="text-[#ccc] transition hover:text-[#4267b2]"
+              className="text-[#252525] dark:text-[#ccc] transition hover:text-[#4267b2]"
             >
               <span className="sr-only">Facebook</span>
               <svg
@@ -96,12 +140,12 @@ const Nav = ({ home, open, setOpen }) => {
               </svg>
             </a>
           </li>
-          <li className="xl:ml-8 xl:text-2xl rounded-xl transition insta text-sm xl:my-0 my-7 flex items-center justify-center place-between font-bold ">
+          <li className="xl:ml-8 xl:text-2xl rounded-xl transition insta text-sm xl:my-0 my-7 mx-auto font-bold ">
             <a
               href="https://www.instagram.com/bttaustria/"
               rel="noreferrer"
               target="_blank"
-              className="text-[#ccc] transition hover:text-white"
+              className="text-[#252525] dark:text-[#ccc] transition hover:text-white"
             >
               <span className="sr-only">Instagram</span>
               <svg
@@ -121,15 +165,6 @@ const Nav = ({ home, open, setOpen }) => {
         </ul>
       </div>
     </div>
-    {/* <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2 sticky top-0">
-        <p className="flex justify-around flex-wrap sliding-text w-screen py-1">
-          <span className="flex items-center"><span className="mx-1"><BsPinFill className="fill-[#FE0000]"/></span><span className="mx-1">Diefenbachgasse 46, 1150 Wien, Austria</span></span>
-          <span className="flex items-center"><span className="mx-1"><BsMailbox2 className="fill-[#FE0000]"/></span><span className="mx-1">bttwien@gmail.com</span></span>
-          <span className="flex items-center"><span className="mx-1"><BsFillTelephoneFill className="fill-[#FE0000]"/></span><span className="mx-1">+43 (0) 6889623179</span></span>
-        </p>     
-      </div> */}
-    </div>
-    
   );
 };
 

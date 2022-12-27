@@ -12,7 +12,7 @@ import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { Helmet } from "react-helmet-async";
 
-const Home = ({ open, setOpen }) => {
+const Home = ({ open, setOpen, scrollToTop }) => {
   const [homeNav, setHomeNav] = useState(true);
 
   return (
@@ -26,13 +26,12 @@ const Home = ({ open, setOpen }) => {
         <link rel="canonical" href="/" />
       </Helmet>
       <div className="overflow-x-hidden">
-        <Nav home={homeNav} open={open} setOpen={setOpen} />
         <Header />
         <Mestre />
-        <Bjj />
+        <Bjj scrollToTop={scrollToTop}/>
         <Schedule />
         <div>
-          <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2">
+          <div className="bg-[#e0e0e0] dark:bg-[#191919] flex justify-between text-[#252525] dark:text-white text-center text-sm md:text-xl py-2">
             <p className="flex flex-wrap justify-around sliding-text w-screen py-1">
               <span className="flex items-center">
                 <span className="mx-1">
@@ -56,12 +55,11 @@ const Home = ({ open, setOpen }) => {
               </span>
             </p>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#191919]">
+          <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#e0e0e0] dark:bg-[#191919]">
             <Map />
             <Contact />
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

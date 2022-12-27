@@ -18,15 +18,15 @@ const Preis = () => {
         />
         <link rel="canonical" href="/Preis" />
       </Helmet>
-      <div>
-        <section className="py-12 bg-white sm:py-16 lg:py-20 bg-[url(/./img/BTT-bg-light.png)]">
+      <div className="pt-[96px]">
+        <section className="py-12 sm:py-16 lg:py-20 bg-[url(/./img/BTT-bg-light.png)] dark:bg-[url(/./img/BTT-bg.png)]">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div
               data-aos="fade-right"
               data-aos-delay="600"
-              className="max-w-2xl text-center sm:text-left"
+              className="w-full text-center sm:text-left"
             >
-              <h1 className="text-3xl font-bold text-[#191919] sm:text-4xl xl:text-5xl font-pj">
+              <h1 className="text-3xl font-bold text-[#252525] dark:text-[#e0e0e0] sm:text-4xl xl:text-5xl text-center w-full">
                 Kommen Sie und versuchen Sie mit uns zu trainieren <br /> (1 Tag
                 gratis)
               </h1>
@@ -35,41 +35,41 @@ const Preis = () => {
             <div
               data-aos="fade-right"
               data-aos-delay="900"
-              className="flex sm:inline-flex px-5 py-4 rounded border border-gray-300 items-center justify-center sm:justify-start space-x-2.5 mt-12"
+              className="block sm:inline-flex px-5 py-4 rounded-lg border items-start justify-start mt-12"
             >
-              <span className="text-sm font-bold tracking-widest text-[#191919] uppercase font-pj">
+              <span className="text-sm font-bold tracking-widest text-[#252525] dark:text-[#e0e0e0] uppercase font-pj">
                 6 Monate
               </span>
 
               <button
                 type="button"
                 onClick={() => setTimespan(!timespan)}
-                className="relative inline-flex flex-shrink-0 w-20 h-4 transition-colors duration-200 ease-in-out bg-[#E5E5E5] rounded cursor-pointer focus:outline-none"
+                className="relative inline-flex flex-shrink-0 w-20 h-4 transition-colors duration-200 ease-in-out bg-[#E5E5E5] rounded-lg cursor-pointer focus:outline-none"
                 role="switch"
               >
                 <span
                   aria-hidden="true"
                   className={`inline-block w-10 h-4 transition duration-200 ease-in-out ${
                     timespan ? "translate-x-10" : "translate-x-0"
-                  } bg-[#191919] rounded shadow pointer-events-none`}
+                  } dark:bg-[#252525] bg-[#e0e0e0] rounded shadow pointer-events-none`}
                 ></span>
               </button>
 
-              <span className="text-sm font-bold tracking-widest text-[#191919] uppercase font-pj">
+              <span className="text-sm font-bold tracking-widest text-[#252525] dark:text-[#e0e0e0] uppercase font-pj">
                 12 Monate
               </span>
             </div>
 
             <div className="grid grid-cols-1 px-12 mt-8 text-center sm:text-left sm:px-0 gap-x-12 gap-y-16 lg:mt-16 sm:grid-cols-2 lg:grid-cols-4">
               <div data-aos="fade-right" data-aos-delay="900">
-                <h3 className="text-lg font-bold text-[#191919] font-pj">
+                <h3 className="text-lg font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                   Kinder bis 14. J.
                 </h3>
                 <p className="mt-3 text-sm font-normal text-gray-600 font-pj">
                   Brazilian Jiu-Jitsu, Grappling, MMA
                 </p>
                 <div className="flex items-end justify-center mt-6 sm:justify-start">
-                  <p className="text-5xl font-bold text-[#191919] font-pj">
+                  <p className="text-5xl font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                     {timespan ? "50€" : "60€"}
                   </p>
                   <p className="text-lg font-medium text-gray-400 font-pj">
@@ -233,7 +233,7 @@ const Preis = () => {
                   />
                 </svg>
 
-                <ul className="mt-6 space-y-3 text-base font-medium text-[#191919]">
+                <ul className="mt-6 space-y-3 text-base font-medium text-[#252525] dark:text-[#e0e0e0]">
                   <li className="flex items-center">
                     <svg
                       className="w-5 h-5 mr-2.5"
@@ -301,14 +301,14 @@ const Preis = () => {
               </div>
 
               <div data-aos="fade-right" data-aos-delay="600">
-                <h3 className="text-lg font-bold text-[#191919] font-pj">
+                <h3 className="text-lg font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                   SchülerInnen bis 25. J.
                 </h3>
                 <p className="mt-3 text-sm font-normal text-gray-600 font-pj">
                   Brazilian Jiu-Jitsu, Grappling, MMA
                 </p>
                 <div className="flex items-end justify-center mt-6 sm:justify-start">
-                  <p className="text-5xl font-bold text-[#191919] font-pj">
+                  <p className="text-5xl font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                     {timespan ? "70€" : "80€"}
                   </p>
                   <p className="text-lg font-medium text-gray-400 font-pj">
@@ -472,7 +472,7 @@ const Preis = () => {
                   />
                 </svg>
 
-                <ul className="mt-6 space-y-3 text-base font-medium text-[#191919]">
+                <ul className="mt-6 space-y-3 text-base font-medium text-[#252525] dark:text-[#e0e0e0]">
                   <li className="flex items-center">
                     <svg
                       className="w-5 h-5 mr-2.5"
@@ -530,14 +530,14 @@ const Preis = () => {
               </div>
 
               <div data-aos="fade-left" data-aos-delay="600">
-                <h3 className="text-lg font-bold text-[#191919] font-pj">
+                <h3 className="text-lg font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                   Erwachsene
                 </h3>
                 <p className="mt-3 text-sm font-normal text-gray-600 font-pj">
                   Brazilian Jiu-Jitsu, Grappling, MMA
                 </p>
                 <div className="flex items-end justify-center mt-6 sm:justify-start">
-                  <p className="text-5xl font-bold text-[#191919] font-pj">
+                  <p className="text-5xl font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                     {timespan ? "85€" : "95€"}
                   </p>
                   <p className="text-lg font-medium text-gray-400 font-pj">
@@ -701,7 +701,7 @@ const Preis = () => {
                   />
                 </svg>
 
-                <ul className="mt-6 space-y-3 text-base font-medium text-[#191919]">
+                <ul className="mt-6 space-y-3 text-base font-medium text-[#252525] dark:text-[#e0e0e0]">
                   <li className="flex items-center">
                     <svg
                       className="w-5 h-5 mr-2.5"
@@ -759,14 +759,14 @@ const Preis = () => {
               </div>
 
               <div data-aos="fade-left" data-aos-delay="900">
-                <h3 className="text-lg font-bold text-[#191919] font-pj">
+                <h3 className="text-lg font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                   10er Block
                 </h3>
                 <p className="mt-3 text-sm font-normal text-gray-600 font-pj">
                   Brazilian Jiu-Jitsu, Grappling, MMA
                 </p>
                 <div className="flex items-end justify-center mt-6 sm:justify-start">
-                  <p className="text-5xl font-bold text-[#191919] font-pj">
+                  <p className="text-5xl font-bold text-[#252525] dark:text-[#e0e0e0] font-pj">
                     150€
                   </p>
                   <p className="text-lg font-medium text-gray-400 font-pj">
@@ -930,7 +930,7 @@ const Preis = () => {
                   />
                 </svg>
 
-                <ul className="mt-6 space-y-3 text-base font-medium text-[#191919]">
+                <ul className="mt-6 space-y-3 text-base font-medium text-[#252525] dark:text-[#e0e0e0]">
                   <li className="flex items-center">
                     <svg
                       className="w-5 h-5 mr-2.5"
@@ -990,7 +990,7 @@ const Preis = () => {
           </div>
         </section>
         <div>
-          <div className="bg-[#191919] flex justify-between text-white text-center text-xl py-2">
+          <div className="bg-[#e0e0e0] dark:bg-[#191919] flex justify-between text-[#252525] dark:text-white text-center text-sm md:text-xl py-2">
             <p className="flex justify-around flex-wrap sliding-text w-screen py-1">
               <span className="flex items-center">
                 <span className="mx-1">
@@ -1014,7 +1014,7 @@ const Preis = () => {
               </span>
             </p>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#191919]">
+          <div className="grid grid-cols-1 xl:grid-cols-2 bg-[#e0e0e0] dark:bg-[#191919]">
             <Map />
             <Contact />
           </div>

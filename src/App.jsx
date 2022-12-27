@@ -71,6 +71,12 @@ function App() {
 
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if(open === 'true') {
+      setShowScrollToTop(false)
+    }
+  },[open])
+
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
   if (spinner) {
@@ -79,43 +85,43 @@ function App() {
       setLoading(false);
     }, 500);
   }
-  return (
-      !loading && (
-          <div id="app" className="App overflow-x-hidden">
-            <Router>
-              <Routes>
-                <Route
-                  path="/"
-                  element={<Home open={open} setOpen={setOpen} />}
-                />
-                <Route
-                  path="/"
-                  element={<SharedLayout open={open} setOpen={setOpen} />}
-                >
-                  <Route path="/BJJ" element={<Bjj />} />
-                  <Route path="/MMA" element={<Mma />} />
-                  <Route path="/Grappling" element={<Grappling />} />
-                  <Route path="/BTT" element={<BTT />} />
-                  <Route path="/Preis" element={<Preis />} />
-                  <Route path="/Kontakt" element={<Kontakt />} />
-                </Route>
-              </Routes>
-            </Router>
 
-            <button
-              className="scrollToTop fixed bottom-[2.5vw] right-[2.5vw] bg-[#FE0000] text-[2.5rem] text-[#fff] p-[10px] rounded-lg border-none z-100"
-              onClick={() => scrollToTop()}
-              style={{
-                visibility: showScrollToTop ? "visible" : "hidden",
-                boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.75)",
-              }}
-              title="Scroll To Top"
-              data-aos="fade-left"
+  const [theme, setTheme] = useState(null);
+
+  return (
+    !loading && (
+      <div id="app" className="App overflow-x-hidden">
+        <Router>
+          <Routes>
+            <Route
+              path="/"
+              element={<SharedLayout open={open} setOpen={setOpen} theme={theme} setTheme={setTheme} scrollToTop={scrollToTop} />}
             >
-              <BsChevronBarUp />
-            </button>
-          </div>
-      )
+              <Route index element={<Home open={open} setOpen={setOpen} scrollToTop={scrollToTop}  />} />
+              <Route path="/BJJ" element={<Bjj />} />
+              <Route path="/MMA" element={<Mma />} />
+              <Route path="/Grappling" element={<Grappling />} />
+              <Route path="/BTT" element={<BTT />} />
+              <Route path="/Preis" element={<Preis />} />
+              <Route path="/Kontakt" element={<Kontakt />} />
+            </Route>
+          </Routes>
+        </Router>
+
+        <button
+          className="z-[9999999] scrollToTop fixed bottom-[2.5vw] right-[2.5vw] bg-[#FE0000] text-[2.5rem] text-[#fff] p-[10px] rounded-lg border-none"
+          onClick={() => scrollToTop()}
+          style={{
+            visibility: showScrollToTop ? "visible" : "hidden",
+            boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.75)",
+          }}
+          title="Scroll To Top"
+          data-aos="fade-left"
+        >
+          <BsChevronBarUp />
+        </button>
+      </div>
+    )
   );
 }
 
