@@ -18,9 +18,9 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark").matches) {
-      setTheme("light");
-    } else {
       setTheme("dark");
+    } else {
+      setTheme("light");
     }
   }, []);
   const handleThemeSwitch = () => {
@@ -50,7 +50,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
 
   return (
     <div className="w-full fixed z-[99999999]">
-      <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#e0e0e0] dark:bg-[#191919]">
+      <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#e0e0e0] dark:bg-[#191919] transition-bg duration-300">
         <div className="flex justify-between items-center">
           <div className="cursor-pointer flex items-center">
             <Link to="/" className="mr-1" onClick={() => scrollToTop()}>
