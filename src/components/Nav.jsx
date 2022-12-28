@@ -91,7 +91,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
         </div>
 
         <ul
-          className={`bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto transition-all duration-500 ease-in  ${
+          className={`bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto transition-all duration-300 xl:transition-none ease-in  ${
             open
               ? "opacity-100 h-[90vh] translate-y-[0] flex flex-col w-full fixed left-0 right-0 z-[1001] mx-auto overflow-hidden overscroll-none"
               : "translate-y-[-120vh] xl:translate-y-[0] opacity-0 xl:opacity-100"
