@@ -16,13 +16,14 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
   const [sun, setSun] = useState("");
   const [day, setDay] = useState("");
 
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark").matches) {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.matchMedia("(prefers-color-scheme: dark").matches) {
+  //     setTheme("");
+  //   } else {
+  //     setTheme("dark");
+  //   }
+  // }, []);
+
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "" : "dark");
     setSun(sun === "sun" ? "" : "sun");
