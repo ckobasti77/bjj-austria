@@ -128,16 +128,16 @@ const Bjj = () => {
             </div>
           </div>
         </div>
-        {/* <div className='w-screen h-screen mt-[10vh]'>
+        <div className='w-screen h-screen mt-[10vh]'>
         <VideoMma 
           loop
           muted
-          controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+          autoPlay
         >
           <source src={videoMma} type="video/webm" />
           <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
         </VideoMma>
-        </div> */}
+        </div>
         <Gallery images={images} />
       </div>
     </>
