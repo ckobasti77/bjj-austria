@@ -8,7 +8,7 @@ function Mestre() {
                 <img src="/./img/logo.jpg" alt="logo" className='hidden md:visible absolute w-[200px] top-[-75px] xl:left-[-75px] right-[-75px] xl:rotate-[-30deg] rotate-[30deg]' />
                 <div className="2xl:pl-24">
                     <div className="flex flex-col xl:flex-row gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
-                        <div className="mx-8 xl:mx-0 text-center xl:w-7/12 md:py-16 xl:py-24 md:text-left">
+                        <div className="mx-8 xl:mx-0 text-center xl:w-7/12 md:py-16 xl:py-24 md:text-left mt-6 xl:mt-0">
                             <h1 className="leading-tight font-bold text-[#252525] dark:text-white text-4xl lg:text-5xl xl:text-6xl lg:leading-tight text-center xl:text-left" data-aos='fade-right' data-aos-delay='400'>Fernando Paulon </h1>
                             <h2 className="max-w-2xl font-bold mt-4 text-2xl text-[#4d4d4d] dark:text-[#ccc] pb-3 text-center xl:text-left" data-aos='fade-right' data-aos-delay='500'>CHEFTRAINER</h2>
                             <blockquote>
