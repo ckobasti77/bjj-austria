@@ -49,7 +49,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
   }, [window.innerWidth]);
 
   return (
-    <div className="w-full fixed z-[999999]">
+    <div className="w-full fixed z-[99999999]">
       <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#e0e0e0] dark:bg-[#191919]">
         <div className="flex justify-between items-center">
           <div className="cursor-pointer flex items-center">
@@ -95,10 +95,10 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
         </div>
 
         <ul
-          className={`bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto xl:transition-none transition-visibility duration-500 ease-in  ${
+          className={`bg-[#e0e0e0] dark:bg-[#191919] xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static xl:z-auto  left-0 w-full xl:w-auto transition-all duration-300 ease-in  ${
             open
-              ? "opacity-100 h-screen flex flex-col w-full fixed left-0 right-0 z-[1001] mx-auto overflow-hidden overscroll-none"
-              : "hidden"
+              ? "opacity-100 h-[90vh] translate-y-[0] flex flex-col w-full fixed left-0 right-0 z-[1001] mx-auto overflow-hidden overscroll-none"
+              : "translate-y-[-120vh] xl:translate-y-[0] opacity-0 xl:opacity-100"
           }`}
           // data-aos={open ? 'fade-down' : ''}
           // data-aos-delay={open ? '1000' : ''}
@@ -106,7 +106,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
           {Links.map((Link, i) => (
             <li
               key={i}
-              className=" xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 flex items-center justify-center place-between py-1 font-bold"
+              className="h-[14%] xl:ml-8 xl:text-2xl text-sm xl:my-0 flex items-center justify-center place-between py-1 font-bold"
               onClick={() => setOpen(false)}
             >
               <NavLink
@@ -118,7 +118,9 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
               </NavLink>
             </li>
           ))}
-          <li className="xl:ml-8 xl:text-2xl text-sm xl:my-0 my-7 mx-auto py-1 font-bold ">
+          <div className="flex justify-center items-center w-full">
+
+          <li className="xl:ml-8 xl:text-2xl text-sm mx-3 xl:mx-auto py-1 font-bold ">
             <a
               href="https://www.facebook.com/bttaustria"
               rel="noreferrer"
@@ -140,7 +142,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
               </svg>
             </a>
           </li>
-          <li className="xl:ml-8 xl:text-2xl rounded-xl transition insta text-sm xl:my-0 my-7 mx-auto font-bold ">
+          <li className="xl:ml-8 xl:text-2xl rounded-xl transition insta text-sm mx-3 xl:mx-auto font-bold ">
             <a
               href="https://www.instagram.com/bttaustria/"
               rel="noreferrer"
@@ -162,6 +164,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
               </svg>
             </a>
           </li>
+          </div>
         </ul>
       </div>
     </div>

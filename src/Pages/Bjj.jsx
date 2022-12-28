@@ -2,6 +2,10 @@ import React from "react";
 import Gallery from "../components/Gallery";
 import { Helmet } from "react-helmet-async";
 
+import { DefaultPlayer as VideoMma } from "react-html5video/dist";
+import 'react-html5video/dist/styles.css';
+import videoMma from '/./img/video1.mp4';
+
 const images = [
   { url: "/./img/bjj/1.jpg", caption: "" },
   { url: "/./img/bjj/3.jpg", caption: "" },
@@ -124,6 +128,16 @@ const Bjj = () => {
             </div>
           </div>
         </div>
+        {/* <div className='w-screen h-screen mt-[10vh]'>
+        <VideoMma 
+          loop
+          muted
+          controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
+        >
+          <source src={videoMma} type="video/webm" />
+          <track label="English" kind="subtitles" srcLang="en" src="http://source.vtt" default />
+        </VideoMma>
+        </div> */}
         <Gallery images={images} />
       </div>
     </>
