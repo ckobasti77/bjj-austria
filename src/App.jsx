@@ -86,7 +86,7 @@ function App() {
     }, 500);
   }
 
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState('');
 
   return (
     !loading && (

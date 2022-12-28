@@ -18,35 +18,30 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark").matches) {
-      setTheme("dark");
-    } else {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
   }, []);
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "" : "dark");
     setSun(sun === "sun" ? "" : "sun");
     setDay(day === "day" ? "" : "day");
+    console.log(theme);
   };
 
   useEffect(() => {
+    console.log(theme);
+  }, [])
+
+  useEffect(() => {
     if (theme === "dark") {
-      document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
     }
   }, [theme]);
 
-  const [phoneNav, setPhoneNav] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth < 1280) {
-      setPhoneNav(true);
-    } else {
-      setPhoneNav(false);
-    }
-    console.log(window.innerWidth);
-  }, [window.innerWidth]);
 
   return (
     <div className="w-full fixed z-[99999999]">
