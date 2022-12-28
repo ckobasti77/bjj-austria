@@ -23,7 +23,7 @@ const Kontakt = () => {
           <p className="flex justify-around flex-wrap sliding-text w-screen py-1">
             <span className="flex items-center">
               <span className="mx-1">
-                <BsPinFill className="fill-[#FE0000]" />
+                <BsPinFill className="fill-[#FE0000] dark:fill-[#FE0000]" />
               </span>
               <span className="mx-1">
                 Diefenbachgasse 46, 1150 Wien, Austria
@@ -31,13 +31,13 @@ const Kontakt = () => {
             </span>
             <span className="flex items-center">
               <span className="mx-1">
-                <FiMail className="text-[#fe0000]" />
+                <FiMail className="text-[#fe0000] dark:text-[#FE0000]" />
               </span>
               <span className="mx-1">bttwien@gmail.com</span>
             </span>
             <span className="flex items-center">
               <span className="mx-1">
-                <BsFillTelephoneFill className="fill-[#FE0000]" />
+                <BsFillTelephoneFill className="fill-[#FE0000] dark:fill-[#FE0000]" />
               </span>
               <span className="mx-1">+43 (0) 6889623179</span>
             </span>

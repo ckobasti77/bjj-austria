@@ -3,6 +3,8 @@ import Map from "../components/Map";
 import Contact from "../components/Contact";
 import { BsPinFill, BsMailbox2, BsFillTelephoneFill } from "react-icons/bs";
 import { Helmet } from "react-helmet-async";
+import { FiMail } from "react-icons/fi";
+
 
 const Preis = () => {
   const [timespan, setTimespan] = useState(true);
@@ -1053,7 +1055,8 @@ const Preis = () => {
               </span>
               <span className="flex items-center">
                 <span className="mx-1">
-                  <BsMailbox2 className="text-[#FE0000] dark:text-[#FE0000]" />
+                <FiMail className="text-[#fe0000] dark:text-[#FE0000]" />
+
                 </span>
                 <span className="mx-1">bttwien@gmail.com</span>
               </span>
