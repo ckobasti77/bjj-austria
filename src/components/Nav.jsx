@@ -50,7 +50,7 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
 
   return (
     <div className="w-full fixed z-[99999999]">
-      <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#e0e0e0] dark:bg-[#191919] transition-bg duration-300">
+      <div className="xl:flex items-center navnav justify-between py-2 xl:px-10 px-7 bg-[#e0e0e0] dark:bg-[#191919] transition-bg">
         <div className="flex justify-between items-center">
           <div className="cursor-pointer flex items-center">
             <Link to="/" className="mr-1" onClick={() => scrollToTop()}>
@@ -77,10 +77,10 @@ const Nav = ({ home, open, setOpen, theme, setTheme, scrollToTop }) => {
                 ></span>
               </button> */}
             <div
-              class={day === "day" ? "tdnn scale-50 hover:scale-[0.55] cursor-pointer" : "day tdnn scale-50 hover:scale-[0.55] cursor-pointer"}
+              class={theme === "dark" ? "tdnn scale-50 hover:scale-[0.55] cursor-pointer" : "day tdnn scale-50 hover:scale-[0.55] cursor-pointer"}
               onClick={() => handleThemeSwitch()}
             >
-              <div class={sun === "sun" ? "moon" : "sun moon"}></div>
+              <div class={theme === "dark" ? "moon" : "sun moon"}></div>
             </div>
           </div>
           <div
