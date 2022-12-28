@@ -43,7 +43,7 @@ const Home = ({ open, setOpen, scrollToTop }) => {
               </span>
               <span className="flex items-center">
                 <span className="mx-1">
-                  <FiMail className="fill-[#FE0000]" />
+                  <FiMail className="text-[#FE0000]" />
                 </span>
                 <span className="mx-1">bttwien@gmail.com</span>
               </span>
