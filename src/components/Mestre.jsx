@@ -12,7 +12,7 @@ function Mestre() {
                             <h1 className="leading-tight font-bold text-[#252525] dark:text-white text-4xl lg:text-5xl xl:text-6xl lg:leading-tight text-left" data-aos='fade-right' data-aos-delay='400'>Fernando Paulon </h1>
                             <h2 className="max-w-2xl font-bold mt-4 text-2xl text-[#4d4d4d] dark:text-[#ccc] pb-3 text-left" data-aos='fade-right' data-aos-delay='500'>CHEFTRAINER</h2>
                             <blockquote>
-                                <p className="text-xl font-semibold leading-relaxed text-[#252525] dark:text-white text-justify" data-aos='fade-right' data-aos-delay='600'>Fernando Paulon ist ein Schwarzgurt im 5. Grad im Brazilian Jiu-Jitsu unter der Ausbildung des legendären Mixed Martial Artists Murilo Bustamante.
+                                <p className="text-xl font-semibold leading-relaxed text-[#252525] dark:text-white text-center xl:text-left" data-aos='fade-right' data-aos-delay='600'>Fernando Paulon ist ein Schwarzgurt im 5. Grad im Brazilian Jiu-Jitsu unter der Ausbildung des legendären Mixed Martial Artists Murilo Bustamante.
                                     Im Alter von 16 Jahren schrieb sich Fernando Paulon an der Carlson Gracie School ein und trainierte im Anschluss im Brazilian Top Team,
                                     welches vom ehemaligen UFC Mittelgewicht Champion Murilo Bustamante gegründet und geleitet wurde.
                                     Paulon ist somit eines der längsten und erfahrensten Mitglieder des Brazilian Top Teams.</p>

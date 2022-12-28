@@ -40,7 +40,7 @@ const BTT = () => {
           >
             ÜBER
           </h2>
-          <p data-aos="fade-right" data-aos-delay="1000" className="text-[#252525] dark:text-[#e0e0e0]">
+          <p data-aos="fade-right" data-aos-delay="1000" className="text-[#252525] dark:text-[#e0e0e0] text-center xl:text-left">
             Das Brazilian Top Team (BTT) ist eine Akademie, die sich auf
             Brazilian Jiu Jitsu und Mixed Martial Arts spezialisiert hat. Es
             wurde im April 2000 von Murilo Bustamante, Ricardo Libório, Mário
@@ -136,7 +136,7 @@ const BTT = () => {
           >
             BTT Geschichte
           </h2>
-          <p data-aos="fade-right" data-aos-delay="1000" className="text-[#252525] dark:text-[#e0e0e0]">
+          <p data-aos="fade-right" data-aos-delay="1000" className="text-[#252525] dark:text-[#e0e0e0] text-center xl:text-left">
             Das Brazilian Top Team hat seinen Ursprung bei Carlson Gracie und
             seiner Akademie. Gracie war ein Innovator im brasilianischen
             Jiu-Jitsu, er und seine Schüler hatten viele Techniken und
